@@ -16,13 +16,15 @@ function Home() {
   }, [])
 
   return (
-    <div className="flex justify-between items-center h-auto bg-rose-100 p-40">
+    <div className="flex justify-between items-center h-full bg-rose-100 p-40">
       <div className="flex flex-col w-1/2">
         <h1 className="font-twinkle text-8xl mb-14">
           Cat <br /> of the day
         </h1>
 
-        <p className="text-xl font-extralight">Your daily source of cats 🐈</p>
+        <p className="text-xl font-extralight ml-6">
+          Your daily source of cats 🐈
+        </p>
       </div>
 
       <PictureCard catPicture={catData} />

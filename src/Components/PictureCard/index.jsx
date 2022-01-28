@@ -10,7 +10,7 @@ function PictureCard({ catPicture }) {
       <img
         src={catPicture}
         alt="cat of the day"
-        className="object-contain border-8 w-full border-amber-400"
+        className="object-cover border-8 w-full border-amber-400 shadow-xl"
       />
 
       <button
