@@ -7,7 +7,7 @@
 
 SPA affichant aléatoirement une photo de chat ainsi qu'un fact, à partir de deux API :
 
-[Cat API](https://thecatapi.com/)
+[Cat API](https://thecatapi.com/)  
 [Cat facts](https://alexwohlbruck.github.io/cat-facts/)
 
 ### Installation
