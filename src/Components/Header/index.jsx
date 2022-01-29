@@ -3,7 +3,7 @@ import headerIllustration from '../../Assets/catpaw.png'
 
 function Header() {
   return (
-    <nav className="flex justify-between items-center w-full h-32 py-5 px-10 bg-white">
+    <nav className="relative flex justify-between items-center w-full h-32 py-5 px-10 bg-white z-50">
       <Link to="/" className="flex items-center">
         <img
           src={headerIllustration}
@@ -14,10 +14,16 @@ function Header() {
       </Link>
 
       <div>
-        <Link to="/facts" className="mx-5 hover:text-pink-500">
+        <Link
+          to="/facts"
+          className="mx-5 font-medium uppercase hover:text-pink-500"
+        >
           Facts
         </Link>
-        <Link to="/about" className="mx-5 hover:text-pink-500">
+        <Link
+          to="/about"
+          className="mx-5 font-medium uppercase hover:text-pink-500"
+        >
           About
         </Link>
       </div>

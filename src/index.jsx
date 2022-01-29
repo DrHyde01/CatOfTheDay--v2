@@ -7,18 +7,23 @@ import Facts from './Pages/Facts'
 import About from './Pages/About'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import { AnimatePresence } from 'framer-motion'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/facts" element={<Facts />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <AnimatePresence exitBeforeEnter>
+      <Router>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/facts" element={<Facts />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+
+        <Footer />
+      </Router>
+    </AnimatePresence>
   </React.StrictMode>,
   document.getElementById('root')
 )

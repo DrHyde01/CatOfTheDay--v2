@@ -5,13 +5,14 @@ function Home() {
   const [catData, setCatData] = useState()
 
   useEffect(() => {
-    fetch(`https://api.thecatapi.com/v1/images/search`).then((response) =>
-      response
-        .json()
-        .then((response) => {
-          setCatData(response[0].url)
-        })
-        .catch((error) => console.log(error))
+    fetch(`https://api.thecatapi.com/v1/images/search?mime_types=jpg`).then(
+      (response) =>
+        response
+          .json()
+          .then((response) => {
+            setCatData(response[0].url)
+          })
+          .catch((error) => console.log(error))
     )
   }, [])
 
@@ -23,7 +24,10 @@ function Home() {
         </h1>
 
         <p className="text-xl font-light ml-6">
-          Your daily source of cats 🐈 🐈‍⬛
+          Your daily source of cats{'  '}
+          <span className="text-4xl">🐈</span>
+          {'  '}
+          <span className="text-4xl">🐈‍⬛</span>
         </p>
       </div>
 
