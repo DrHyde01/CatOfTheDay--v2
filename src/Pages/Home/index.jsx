@@ -22,8 +22,8 @@ function Home() {
           Cat <br /> of the day
         </h1>
 
-        <p className="text-xl font-extralight ml-6">
-          Your daily source of cats 🐈
+        <p className="text-xl font-light ml-6">
+          Your daily source of cats 🐈 🐈‍⬛
         </p>
       </div>
 

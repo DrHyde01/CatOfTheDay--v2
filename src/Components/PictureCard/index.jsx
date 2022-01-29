@@ -15,7 +15,7 @@ function PictureCard({ catPicture }) {
 
       <button
         onClick={NextPicture}
-        className="flex justify-center items-center p-3 h-14 w-14 bg-pink-600 rounded-full shadow-md -translate-y-8 -translate-x-6 rotate-12 ease-in-out duration-500 hover:bg-pink-500"
+        className="flex justify-center items-center p-3 h-14 w-14 bg-pink-600 rounded-full shadow-xl -translate-y-8 -translate-x-6 rotate-12 ease-in-out duration-500 hover:bg-pink-500"
       >
         <RefreshIcon className=" text-white ease-in-out duration-500 hover:rotate-90" />
       </button>
