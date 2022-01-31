@@ -1,11 +1,11 @@
 import { RefreshIcon } from '@heroicons/react/solid'
 import { motion } from 'framer-motion'
 
-function NextPicture() {
-  window.location.reload(false)
-}
-
 function PictureCard({ catPicture }) {
+  function NextPicture() {
+    window.location.reload(false)
+  }
+
   return (
     <div className="flex flex-col w-full lg:w-1/2 2xl:w-1/3">
       <motion.div
