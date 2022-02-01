@@ -18,7 +18,7 @@ function Facts() {
   }, [])
 
   return (
-    <div className="flex justify-center items-center w-full h-screen p-8 md:p-20 lg:p-40 bg-rose-100">
+    <div className="flex justify-center items-center w-full h-screen p-8 md:p-20 lg:p-40 bg-rose-100 dark:bg-slate-800 transition-all">
       <FactCard fact={factData} />
     </div>
   )

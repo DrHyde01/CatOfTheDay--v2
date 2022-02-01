@@ -23,7 +23,7 @@ function FactCard({ fact }) {
           alt="cat and books"
           className="absolute h-52 lg:h-80 right-0 lg:right-10 -top-16 lg:-top-32 -z-1"
         />
-        <div className="relative flex p-8 md:p-14 lg:p-20 justify-center bg-white rounded-xl shadow-xl">
+        <div className="relative flex p-8 md:p-14 lg:p-20 justify-center bg-white dark:bg-slate-100 rounded-xl shadow-xl">
           <p className="text-lg lg:text-xl font-extralight">{fact}</p>
         </div>
         <button
