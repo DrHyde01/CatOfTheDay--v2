@@ -4,7 +4,7 @@ import PictureCard from '../../Components/PictureCard'
 function Home() {
   const [catData, setCatData] = useState()
 
-  useEffect(() => {
+  const getCat = () => {
     fetch(`https://api.thecatapi.com/v1/images/search?mime_types=jpg`).then(
       (response) =>
         response
@@ -14,6 +14,9 @@ function Home() {
           })
           .catch((error) => console.log(error))
     )
+  }
+  useEffect(() => {
+    setCatData(getCat)
   }, [])
 
   return (
@@ -31,7 +34,7 @@ function Home() {
         </p>
       </div>
 
-      <PictureCard catPicture={catData} />
+      <PictureCard catPicture={catData} getCat={getCat} />
     </div>
   )
 }

@@ -2,11 +2,7 @@ import { RefreshIcon } from '@heroicons/react/solid'
 import factIllustration from '../../Assets/catbooks.png'
 import { motion } from 'framer-motion'
 
-function NextFact() {
-  window.location.reload(false)
-}
-
-function FactCard({ fact }) {
+function FactCard({ fact, getFact }) {
   return (
     <div className="relative flex flex-col w-full 2xl:w-1/2">
       <motion.div
@@ -27,7 +23,7 @@ function FactCard({ fact }) {
           <p className="text-lg lg:text-xl font-extralight">{fact}</p>
         </div>
         <button
-          onClick={NextFact}
+          onClick={getFact}
           className="absolute -right-5 -bottom-5 flex justify-center items-center p-3 h-14 w-14 z-20 bg-pink-600 rounded-full shadow-xl  ease-in-out duration-500 hover:bg-pink-500"
         >
           <RefreshIcon className=" text-white ease-in-out duration-500 hover:rotate-90" />

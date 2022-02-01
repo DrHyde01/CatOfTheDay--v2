@@ -1,11 +1,7 @@
 import { RefreshIcon } from '@heroicons/react/solid'
 import { motion } from 'framer-motion'
 
-function PictureCard({ catPicture }) {
-  function NextPicture() {
-    window.location.reload(false)
-  }
-
+function PictureCard({ catPicture, getCat }) {
   return (
     <div className="flex flex-col w-full lg:w-1/2 2xl:w-1/3">
       <motion.div
@@ -22,7 +18,7 @@ function PictureCard({ catPicture }) {
 
         <div className="flex justify-center lg:inline-block">
           <button
-            onClick={NextPicture}
+            onClick={getCat}
             className="flex justify-center items-center p-3 h-14 w-14 bg-pink-600 rounded-full shadow-xl -translate-y-8 lg:-translate-x-6 ease-in-out duration-500 hover:bg-pink-500"
           >
             <RefreshIcon className=" text-white ease-in-out duration-500 hover:rotate-90" />
