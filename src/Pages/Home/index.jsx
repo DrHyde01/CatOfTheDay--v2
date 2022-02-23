@@ -29,8 +29,6 @@ function Home() {
         <p className=" text-base md:text-xl  dark:text-white font-light ml-0 lg:ml-6">
           Your daily source of cats{'  '}
           <span className="text-lg lg:text-4xl">🐈</span>
-          {'  '}
-          <span className="text-lg lg:text-4xl">🐈‍⬛</span>
         </p>
       </div>
 

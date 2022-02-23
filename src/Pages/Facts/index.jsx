@@ -12,7 +12,6 @@ function Facts() {
       .then((response) => {
         const fact = JSON.parse(response).text
         setFactData(fact)
-        console.log(fact)
       })
       .catch((error) => console.log(error))
   }

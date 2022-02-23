@@ -19,9 +19,9 @@ function PictureCard({ catPicture, getCat }) {
         <div className="flex justify-center lg:inline-block">
           <button
             onClick={getCat}
-            className="flex justify-center items-center p-3 h-14 w-14 bg-pink-600 rounded-full shadow-xl -translate-y-8 lg:-translate-x-6 ease-in-out duration-500 hover:bg-pink-500"
+            className="flex justify-center items-center p-3 h-14 w-14 bg-pink-600 rounded-full shadow-xl  -translate-y-8 lg:-translate-x-6 ease-in-out duration-500 hover:bg-pink-500"
           >
-            <RefreshIcon className=" text-white ease-in-out duration-500 hover:rotate-90" />
+            <RefreshIcon className=" text-white ease-in-out duration-500  h-8 w-8  hover:rotate-90" />
           </button>
         </div>
       </motion.div>

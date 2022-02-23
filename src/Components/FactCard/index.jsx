@@ -26,7 +26,7 @@ function FactCard({ fact, getFact }) {
           onClick={getFact}
           className="absolute -right-5 -bottom-5 flex justify-center items-center p-3 h-14 w-14 z-20 bg-pink-600 rounded-full shadow-xl  ease-in-out duration-500 hover:bg-pink-500"
         >
-          <RefreshIcon className=" text-white ease-in-out duration-500 hover:rotate-90" />
+          <RefreshIcon className=" text-white  h-8 w-8 ease-in-out duration-500 hover:rotate-90" />
         </button>
       </motion.div>
     </div>
